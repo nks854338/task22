@@ -113,3 +113,45 @@ img{
   color: #f06;
   margin: 5px;
 }
+
+@media(max-width:550px){
+  form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    font-size: 3vmin;
+    background-color: #f06;
+    border-radius: 20px;
+    padding: 2vmin;
+  }
+
+  .infoBox h4{
+    font-size: 4vmin;
+  }
+  .infoBox p{
+    font-size: 2.3vmin;
+  }
+
+  .box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    overflow: hidden;
+    background-color: black;
+    margin: 5vmin;
+  }
+
+  .card{
+    height: 120vmin;
+    border: 10px solid #f06;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f06;
+    border: none;
+  }
+
+}
