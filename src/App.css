@@ -1,157 +1,114 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-  background-color: #111;
-  color: #ffffff;
+html {
+  font-size: 62.5%;
 }
 
-h1{
+h1 {
+  font-size: 5vmin;
+  margin: 5vmin 0;
   text-align: center;
-  color: #ffffff;
-  height: 40px;
+}
+
+.title{
+  height: 8vmin;
+  overflow: scroll;
+}
+
+h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 3vmin;
+}
+
+.desc{
+  height: 14vmin;
+  overflow: scroll;
+}
+
+.desc::-webkit-scrollbar, .title::-webkit-scrollbar{
+  display: none;
+}
+
+p {
+  margin: 2rem 0;
+  color: rgba(21, 19, 60, 0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.imageBox{
+  width: auto;
+  height: 30vmin;
+  margin: 3vmin 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mainHeading{
-  font-size: 5vmin;
-  margin: 5vmin;
-}
-
-
-form{
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  margin: auto;
-  font-size: 3vmin;
-  background-color: #f06;
-  border-radius: 20px;
-  padding: 2vmin;
-}
-
-form h3{
-  text-align: center;
-  font-size: 30px;
-}
-
-input{
-  height: 30px;
+.postImg{
   width: 100%;
-  padding-left: 10px;
+}
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.stories-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.card {
+  width: 30vw;
+  padding: 30px;
+  box-shadow: gray 0 2px 5px;
   border-radius: 10px;
+  color: #15133c;
 }
 
-.todoSubmitBtn{
-  margin: auto;
- height: 5vmin;
- width: 25vmin;
- border-radius: 20px;
- background-color: rgb(90, 90, 255);
- color: #ffffff;
- font-size: 2.5vmin;
+.card-button {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.box{
-  display: inline-block;
-  border: 5px solid transparent;
-  margin: 3.5vmin;
-  border-image: linear-gradient(45deg, #f06, green) 1;
-  overflow: hidden;
-  background-color: black;
+.card-button a {
+  color: #92b4ec;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
-.box:hover{
-  box-shadow: 0px 5px 10px gray;
+.card-button a:last-child {
+  color: red;
 }
 
-.card{
-  height: 65vmin;
-  width: 46vmin;
-  text-align: center;
-  color: #ffffff;
-  background-color: #f06;
+form {
+  display: grid;
+  place-items: center;
+}
+
+input {
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
   border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+  margin-bottom: 3vmin;
 }
 
-.imgBox{
-  height: 82%;
-  overflow: hidden;
-}
-
-.infoBox{
-  padding: 0px 5px;
-  border: none;
-}
-
-.infoBox h4{
-  font-size: 3.2vmin;
-}
-.infoBox p{
-  font-size: 2vmin;
-}
-
-img{
-  max-height: 100%;
-}
-
-.card h4{
-}
-
-.deleteBtn{
-  height: 3.3vmin;
-  width: 15vmin;
-  border: none;
-  border-radius: 10px;
-  background-color: #fff;
-  font-size: 2.3vmin;
-  color: #f06;
-  margin: 5px;
-}
-
-@media(max-width:550px){
-  form{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-    font-size: 3vmin;
-    background-color: #f06;
-    border-radius: 20px;
-    padding: 2vmin;
-  }
-
-  .infoBox h4{
-    font-size: 4vmin;
-  }
-  .infoBox p{
-    font-size: 2.3vmin;
-  }
-
-  .box{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    max-width: 85%;
-    overflow: hidden;
-    background-color: black;
-    margin: 5vmin;
-  }
-
-  .card{
-    height: 120vmin;
-    border: 10px solid #f06;
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #f06;
-    border: none;
-  }
-
-}
