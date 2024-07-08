@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Project link: net[(https://beautiful-sawine-d57db0.netlify.app)].
+Project link: (https://beautiful-sawine-d57db0.netlify.app).
 
 ## Available Scripts
 
