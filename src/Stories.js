@@ -17,17 +17,14 @@ const Stories = () => {
     <>
     <div class="stories-div">
       {hits.map((curPost) => {
-        const { title, description, objectID, url,urlToImage } = curPost;
+        const { title, author, num_comments, objectID, url } = curPost;
         return (
           <>
             <div className="card">
               <div className="title"><h2>{curPost.title}</h2></div>
-              <div className="imageBox">
-              <img src= {curPost.urlToImage ? curPost.urlToImage : "https://www.nzherald.co.nz/resizer/v2/2GEVLYMTNVDIZKI2ZMFUNSKMJ4.JPG?auth=aa5c980c411738c195afa7da7a52e41cceaf450d0f73d2fdd111bc1d98739282&width=1200&height=675&quality=70&smart=true"} className="postImg"/>
-              </div>
               <div className="desc">
               <p>
-                {curPost.description}
+                By <span>{curPost.author}</span> | <span> {curPost.num_comments} </span> comments
               </p>
               </div>
               <div className="card-button">
