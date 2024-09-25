@@ -139,7 +139,7 @@ input {
   }
 
   .card{
-    width: 90%;
+    width: 95%;
   }
 
   .title{
@@ -147,6 +147,6 @@ input {
   }
 
   .title h2{
-    font-size: 22px;
+    font-size: 19px;
   }
 }
