@@ -116,6 +116,10 @@ input {
 
 
 @media (max-width: 850px){
+  h1 {
+    font-size: 27px;
+  }
+
   input {
     padding: 7px;
     min-width: 50vw;
@@ -136,5 +140,13 @@ input {
 
   .card{
     width: 90%;
+  }
+
+  .title{
+    height: fit-content;
+  }
+
+  .title h2{
+    font-size: 22px;
   }
 }
